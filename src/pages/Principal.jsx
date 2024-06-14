@@ -15,18 +15,18 @@ const Principal = () => {
         setTitulo("");
         setPrecio("");
     };
-    /*const eliminarLibro = async (e) => {
+    const eliminarLibro = async (e) => {
         deletePerson(id);
         setId("");
 
     };
     const editarLibro = async (e) => {
-        await updatePerson(id, autor, titulo, precio);
+        await updatePerson(id, {autor, titulo, precio} );
         setAutor("");
         setTitulo("");
         setPrecio("");
         setId("");
-    };*/
+    };
 
     useEffect(() => {
         getPersons().then(data => setInformacion(data.data))
