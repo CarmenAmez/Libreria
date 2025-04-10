@@ -15,12 +15,12 @@ const Principal = () => {
         setTitulo("");
         setPrecio("");
     };
-    const eliminarLibro = async (e) => {
+    const eliminarLibro = async () => {
         deletePerson(id);
         setId("");
 
     };
-    const editarLibro = async (e) => {
+    const editarLibro = async () => {
         await updatePerson(id, {autor, titulo, precio} );
         setAutor("");
         setTitulo("");
